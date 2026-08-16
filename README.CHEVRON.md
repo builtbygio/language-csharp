@@ -1,8 +1,12 @@
 # language-csharp (Chevron)
 
-TextMate-only bundled grammar (no tree-sitter). Owned so the pin is not
-an archived `atom/*` remote.
+C# highlighter for Chevron. Tree-sitter is the default for `source.cs`
+(`tree-sitter-c-sharp@0.23.5` via `grammars/tree-sitter-c-sharp.json`).
+Official grammar; npm prebuilds for linux/darwin/win32 x64+arm64. ESM;
+Chevron loads it through `load-tree-sitter-language.js`.
 
-Chevron loads this via `packageDependencies`. Do not add a tree-sitter
-grammar here without updating `src/load-tree-sitter-language.js` and
-the official `tree-sitter@0.25` contract.
+`source.csx` and `source.cake` stay TextMate-only (`csx.cson`,
+`cake.cson`). The TextMate `grammars/csharp.cson` stays as the fallback.
+
+Owned so the pin is not an archived `atom/*` remote.
+Chevron loads this via `packageDependencies`.
