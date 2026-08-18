@@ -1,6 +1,6 @@
 {
   "name": "language-csharp",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "private": true,
   "description": "C# language support in Chevron",
   "repository": {
