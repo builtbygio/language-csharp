@@ -1,17 +1,27 @@
 {
   "name": "language-csharp",
-  "version": "1.1.1",
+  "version": "1.3.1",
   "private": true,
-  "description": "C# language support for Atom",
-  "repository": "https://github.com/atom/language-csharp",
+  "description": "C# language support in Chevron",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/builtbygio/language-csharp.git"
+  },
   "keywords": [
     "C#",
     "csharp",
-    ".Net"
+    ".Net",
+    "tree-sitter"
   ],
   "license": "MIT",
-  "engines": {
-    "atom": ">0.50.0"
+  "bugs": {
+    "url": "https://github.com/builtbygio/chevron/issues"
   },
-  "dependencies": {}
+  "engines": {
+    "atom": ">0.50.0",
+    "chevron": "*"
+  },
+  "dependencies": {
+    "tree-sitter-c-sharp": "0.23.5"
+  }
 }
